@@ -8,6 +8,16 @@
     padding: 128px 0;
     &:last-child{
       align-items: flex-end;
+
+      @media (max-width: $phone) {
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: $phone){
+      flex-direction: column;
+      gap: 48px;
+      padding: 64px 0px 64px 16px;
     }
   }
 

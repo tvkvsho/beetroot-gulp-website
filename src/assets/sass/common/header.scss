@@ -40,6 +40,13 @@
             transform: translate(-50%, -50%);
             background-color: beige;
         }
+
+        @media (max-width: $phone){
+            z-index: 9;
+            top: 89vw;
+            left: 50vw;
+            height: 120vh;
+        }
     }
 
     &__link {
@@ -126,7 +133,7 @@
             ~.gam-btn {
 
                 .header__gam-line:first-child {
-                    transform: rotate(311deg) translate(-3px, 3px);
+                    transform: rotate(314deg) translate(-3px, 3px);
                 }
 
                 .header__gam-line:nth-child(2) {
@@ -134,7 +141,7 @@
                 }
 
                 .header__gam-line:last-child {
-                    transform: rotate(230deg) translate(2px, 3px);
+                    transform: rotate(226deg) translate(2px, 3px);
                 }
             }
         }
