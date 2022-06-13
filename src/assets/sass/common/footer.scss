@@ -1,0 +1,66 @@
+.footer{
+  background: #F4F4F4;
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 128px 0;
+    &:last-child{
+      align-items: flex-end;
+    }
+  }
+
+  &__title{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    color: $color-black;
+    font-family: $sub-font;
+    margin: 0 0 32px 0;
+  }
+
+  &__phone{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    font-family: $main-font;
+    color: $color-text;
+    margin: 0 0 16px 0;
+  }
+
+  &__email{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    font-family: $main-font;
+    color: $color-text;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    font-family: $main-font;
+    color: $color-black;
+  }
+
+  &__copywrite{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: $color-black;
+  }
+
+}

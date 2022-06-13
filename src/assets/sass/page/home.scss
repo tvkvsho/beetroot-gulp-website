@@ -1,0 +1,106 @@
+.home {
+
+    //hero section
+    .hero {
+        &__title {
+            max-width: 710px;
+            padding: 120px 0;
+
+            @media (max-width: $tab) {
+                padding: 64px 0 40px;
+            }
+        }
+    }
+
+    //hero section end
+
+    //slider section
+    .slider {
+        margin: 0 0 715px 0;
+
+        &__container {
+            display: flex;
+            gap: 32px;
+            overflow: scroll;
+            padding: $conteiner-size;
+            position: absolute;
+            width: 2272px;
+            left: -325px;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__item {
+            min-width: 544px;
+
+            @media (max-width: $tab) {
+                min-width: 257px;
+            }
+        }
+
+        &__img {
+            margin-bottom: 16px;
+        }
+    }
+
+    //slider section end
+
+    //details sections
+
+    .details{
+        margin: 0 0 128px 0;
+
+        &__sub-title{
+            margin: 0 0 40px 0;
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__text{
+            color: $color-text;
+            &:first-child{
+                margin: 0 0 40px 0;
+            }
+        }
+
+    }
+
+    //details section end
+
+    //latest posts section
+    .latest-posts{
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto 128px;
+        }
+
+        &__item{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 34px;
+        }
+
+        &__controls{
+            display: flex;
+            margin: 0 0 40px 0;
+        }
+
+        &__view-all{
+            margin-left: auto;
+            display: flex;
+            gap: 8px;
+        }
+
+
+    }
+    //latest posts section end
+
+
+}

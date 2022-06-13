@@ -1,0 +1,125 @@
+.blog{
+
+  &__container{
+    margin: 0 auto 114px;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:last-child{
+      padding: 0 68px;
+    }
+  }
+
+  &__title{
+    padding: 128px 0 96px;
+  }
+
+  &__tags{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    font-family: $main-font;
+    color: $color-text;
+    margin: 0 0 24px 0;
+    padding: 50px 0 0 0;
+  }
+
+  &__sub-title{
+    margin: 0 0 16px 0;
+  }
+
+  &__date{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    font-family: $main-font;
+    color: $color-text;
+    margin: 0 0 48px 0;
+  }
+
+  &__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    font-family: $main-font;
+    color: $color-text;
+  }
+
+  &__pages{
+    display: flex;
+    margin-top: auto;
+    gap: 24px;
+  }
+
+}
+
+.posts{
+
+  &__container{
+    margin: 0 auto 128px;
+  }
+
+  &__controls{
+    display: flex;
+    margin: 0 0 48px 0;
+  }
+
+  &__c-title{
+
+  }
+
+  &__dropdown{
+    display: flex;
+    gap: 194px;
+    height: 48px;
+    border-bottom: 1px solid $color-black;
+  }
+
+  &__c-title{
+    margin: 0 40px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    font-family: $main-font;
+    color: $color-black;
+  }
+
+  &__dropdown-title{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    font-family: $main-font;
+    color: $color-text;
+  }
+
+  .dropdown{
+    margin: 10px 0 0 0;
+  }
+
+  &__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 128px 40px;
+    margin: 0 auto 68px;
+  }
+
+  &__img{
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+}

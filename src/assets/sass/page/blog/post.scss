@@ -1,0 +1,45 @@
+.post {
+    //background-image: url('../img/logo.svg');
+
+    &__tag-date {
+        display: flex;
+        margin: 0 0 24px 0;
+    }
+
+    &__img{
+        margin: 0 0 24px 0;
+    }
+
+    &__tag{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        font-family: $main-font;
+        color: $color-text;
+    }
+
+    &__date{
+        margin-left: auto;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        font-family: $main-font;
+        color: $color-text;
+    }
+
+    &__title{
+        height: 76px;
+        margin: 0 0 24px 0;
+    }
+
+    &__description{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.05em;
+        color: $color-text;
+    }
+
+}
