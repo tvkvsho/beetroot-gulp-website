@@ -1,0 +1,84 @@
+.form{
+
+    &__fieldset{
+        border: none;
+    }
+
+    &__box{
+        display: flex;
+        gap: 43px;
+    }
+
+    &__field{
+        width: 100%;
+    }
+
+    &__label{
+        font-family: $main-font;
+        color: $color-text;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.05em;
+    }
+
+    &__input{
+        width: 100%;
+        padding: 8px 0px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1em;
+        color: $color-text;
+        border: none;
+        border-bottom: 1px solid $color-text;
+    }
+
+    &__checkbox{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        color: $color-text;
+        font-family: $main-font;
+    }
+
+    &__field.checkbox {
+        margin: 0 0 48px 0;
+    }
+
+    &__submnit{
+        padding: 8px 34px;
+        border: none;
+        border-radius: 0px;
+        color: white;
+        background: $color-text;
+        font-family: $main-font;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.1em;
+    }
+
+    .first-field{
+        margin: 0 0 48px 0;
+    }
+
+    .checkbox{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .comment{
+        display: block;
+        margin: 0 0 48px 0;
+    }
+
+    &__post-page{
+        margin: 0 0 96px 0;
+    }
+}

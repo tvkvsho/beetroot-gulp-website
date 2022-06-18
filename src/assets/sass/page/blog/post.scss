@@ -62,4 +62,303 @@
         color: $color-text;
     }
 
+    &__comments{
+        display: flex;
+        flex-direction: column;
+
+        &-com{
+            display: flex;
+            gap: 24px;
+            margin: 0 0 40px 0;
+
+            &:last-child{
+                margin: 0 0 128px 0;
+            }
+        }
+
+        &-subtitle{
+            margin: 0 0 24px 0;
+        }
+
+        &-row{
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            margin: 0 0 16px 0;
+        }
+        
+        &-img{
+            max-width: 70px;
+            max-height: 70px;
+        }
+
+        &-title{
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 32px;
+            letter-spacing: 0.05em;
+            font-family: $main-font;
+            color: $color-text;
+        }
+
+        &-date{
+            margin-left: 0;
+        }
+
+        &-text{
+            margin: 0 0 16px 0;
+        }
+
+        &-r-icon{
+            max-width: 16px;
+            max-height: 14px;
+        }
+
+        .reply-row{
+            display: flex;
+            gap: 6px;
+        }
+
+        &-r-text{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+            letter-spacing: 0.1em;
+            color: $color-text;
+            font-family: $main-font;
+        }
+
+        &-com-rep{
+            display: flex;
+            padding: 0 0 40px 96px;
+            gap: 24px;
+            border-bottom: 1px solid #F4F4F4;
+            margin: 0 0 40px 0;
+        }
+    }
+
+
 }
+
+.post-content{
+
+    &__box{
+        display: flex;
+    }
+
+    &__bg{
+        margin: 0 0 40px 0;
+    }
+
+    &__tag{
+        padding: 128px 0 0 0;
+        margin: 0 0 24px 0;
+
+        @media (max-width: $phone){
+            padding: 40px 0 16px 0;
+            margin: 0;
+        }
+    }
+
+    &__title{
+        max-width: 640px;
+        margin: 0 0 48px 0;
+
+        @media (max-width: $phone){
+            margin: 0 0 16px 0;
+            font-size: 33px;
+        }
+    }
+
+    &__date-comment{
+        display: flex;
+        align-items: center;
+        margin: 0 0 64px 0;
+
+        @media (max-width: $phone){
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 0 40px 0;
+        }
+    }
+
+    &__profile-head{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin: 0 0 40px 0;
+
+        @media (max-width: $phone){
+            margin: 0 0 70px 0;
+        }
+    }
+
+    &__profile-pic-m{
+        max-width: 70px;
+        max-height: 70px;
+    }
+
+    &__date{
+        margin: 0 39px 0 0;
+
+        @media (max-width: $phone){
+            margin: 0 0 8px 0;
+        }
+    }
+
+    &__comment-icon{
+        max-width: 16px;
+        max-height: 15px;
+        margin: 0 8px 0 0;
+    }
+
+    &__comment-count{
+        width: 50%;
+        display: flex;
+        margin: 0;
+    }
+
+    &__box{
+        position: relative;
+        max-width: 736px;
+        margin: 0 auto;
+    }
+
+    .first-field{
+
+        @media (max-width: $phone){
+            display: flex;
+            flex-direction: column;
+            padding-right: 73px;
+        }
+    }
+
+    &__s-link{
+        display: block;
+    }
+
+    &__social{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        min-width: 18px;
+        height: 137px;
+        position: sticky;
+        top: 40px;
+        margin: 0 40px 0 0;
+
+        @media (max-width: $phone){
+            position: absolute;
+            flex-direction: row;
+            padding: 60px 0 0 0;
+        }
+    }
+
+    &__text{
+        margin: 0 0 32px 0;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        font-family: $main-font;
+        color: $color-black;
+
+    }
+
+    &__note{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 40px 64px;
+        border-left: 1px solid $color-text;
+        gap: 40px;
+        margin: 0 0 45px 0;
+
+        @media (max-width: $phone){
+            padding: 0 0 40px 16px;
+        }
+    }
+    
+    &__note-p{
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        font-family: $main-font;
+        color: $color-black;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-family: $main-font;
+        color: $color-black;
+        list-style: disc outside none;
+        margin: 0 0 66px 12px;
+    }
+
+    &__list-item{
+        color: $color-black;
+        font-family: $main-font;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        list-style: disc outside none;
+        margin-left: 12px;
+    }
+
+    &__tags-bottom{
+        display: flex;
+        margin: 0 0 96px 0;
+    }
+
+    &__tag-title{
+        font-family: $color-black;
+        color: $color-black;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.1em;
+        margin: 0 16px 0 0;
+    }
+
+    &__tags{
+        font-family: $main-font;
+        color: $color-text;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.1em;
+    }
+
+    &__leave-comment{
+        margin: 0 0 64px 0;
+    }
+
+    .grey{
+        color: grey;
+    }
+    
+    .facebook{
+        max-width: 9px;
+        max-height: 16px;
+    }
+    
+    .twitter{
+        max-width: 17px;
+        max-height: 16px;
+    }
+    
+    .linkedin{
+        max-width: 16px;
+        max-height: 16px;
+    }
+    
+    .dribbble{
+        max-width: 16px;
+        max-height: 16px;
+    }
+
+}
+

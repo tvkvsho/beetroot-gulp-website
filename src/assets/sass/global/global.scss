@@ -1,5 +1,6 @@
 body {
     font-family: $main-font;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -107,6 +108,14 @@ body {
     line-height: 27px;
     letter-spacing: 0.1em;
     font-family: $main-font;
+}
+
+.grey{
+    color: grey;
+}
+
+.link-to-post{
+    color: $color-black;
 }
 
 // @media (max-width: 991px) {
