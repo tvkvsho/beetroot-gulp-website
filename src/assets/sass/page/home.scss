@@ -67,6 +67,10 @@
 
         &__sub-title{
             margin: 0 0 40px 0;
+
+            @media (max-width: $phone){
+                margin: 0 0 28px 0;
+            }
         }
 
         &__container {
@@ -75,6 +79,16 @@
 
             @media (max-width: $phone){
                 grid-template-columns: 1fr;
+            }
+        }
+
+        &__item{
+
+            @media (max-width: $phone){
+
+                &:first-child{
+                    margin: 0 0 48px 0;
+                }
             }
         }
 
