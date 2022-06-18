@@ -11,8 +11,21 @@
 
     <!-- Styles -->
     <style>
-        .container{}
+        .container{display: flex;justify-content: center;flex-direction: column;padding: 100px 0 0 0;}
         .error-page__logo{}
+        .logo{max-width: 135px;margin: 0 auto 130px;}
+        .error-page__title{display: block;font-family: 'Red Hat Display', sans-serif;font-weight: 500;font-size: 140px;line-height: 185px;letter-spacing: 0.05em;color: #CCCCCC;margin: 0 auto 8px;}
+        .error-page__text{display:flex;flex-direction: column;align-items: center;font-weight: 400;font-size: 23px;line-height: 38px;letter-spacing: 0.1em;margin: 0 auto 40px;}
+        .error-page__oops{color: #CCCCCC;}
+        .error-page__line{color: #565656;}
+        .error-page__go-home{display: flex;align-items: center;gap: 8px;padding: 8px 34px;width: 176px;max-height: 45px;font-weight: 700;font-size: 16px;line-height: 27px;letter-spacing: 0.1em;color: #FFFFFF;background: #565656;margin: 0 auto 24px;}
+        .error-page__arrow{max-width: 21px;max-height: 12px;transform: rotate(180deg);}
+        .error-page__social{display: flex;gap: 24px;margin: 0 auto;}
+        .facebook{max-width: 9px;max-height: 16px;}
+        .twitter{max-width: 19px;max-height: 16px;}
+        .linkedin{max-width: 16px;max-height: 16px;}
+        .dribbble{max-width: 16px;max-height: 16px;}
+        @media (max-width: 375px){.error-page__line{text-align: center;}.error-page__text{margin: 0 auto 64px;}}
     </style>
     <!-- Styles end -->
 </head>
@@ -21,22 +34,25 @@
     <div class="page-wrapper">
         <section class="error-page">
             <div class="container">
-                <img src="" alt="" class="logo">
-                <h1 class="error-page__title"></h1>
-                <p class="error-page__text"></p>
-                <button></button>
+                <img src="@@webRoot/img/logo.svg" alt="" class="logo">
+                <h1 class="error-page__title">404</h1>
+                <p class="error-page__text">
+                    <span class="error-page__line"><span class="error-page__oops">Oops!</span> we are sorry, but the page you requested</span>
+                    <span class="error-page__line">was not found.</span>
+                </p>
+                <a href="@@webRoot/index.html" class="error-page__go-home"><img src="@@webRoot/img/arrow-white.svg" alt="arrow" class="error-page__arrow">Go Home</a>
                 <div class="error-page__social">
-                    <a href="" class="error-page__icon-link">
-
+                    <a href="#" class="error-page__icon-link">
+                        <img src="@@webRoot/img/icons/icon-facebook.svg" alt="facebook" class="error-page__icon facebook">
                     </a>
-                    <a href="" class="error-page__icon-link">
-
+                    <a href="#" class="error-page__icon-link">
+                        <img src="@@webRoot/img/icons/icon-twitter.svg" alt="twitter" class="error-page__icon twitter">
                     </a>
-                    <a href="" class="error-page__icon-link">
-
+                    <a href="#" class="error-page__icon-link">
+                        <img src="@@webRoot/img/icons/icon-linkedin.svg" alt="linkedin" class="error-page__icon linkedin">
                     </a>
-                    <a href="" class="error-page__icon-link">
-
+                    <a href="#" class="error-page__icon-link">
+                        <img src="@@webRoot/img/icons/icon-dribbble.svg" alt="dribbble" class="error-page__icon dribbble">
                     </a>
                 </div>            
             </div>
