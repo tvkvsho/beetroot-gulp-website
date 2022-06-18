@@ -81,4 +81,10 @@
     &__post-page{
         margin: 0 0 96px 0;
     }
+
+    &__select{
+        border: none;
+        border-bottom: 1px solid $color-text;
+        padding: 0 0 15px 0;
+    }
 }

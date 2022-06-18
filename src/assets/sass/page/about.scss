@@ -1,0 +1,58 @@
+.about{
+
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 128px 0 0 0;
+        gap: 148px;
+        margin: 0 auto 128px;
+
+        @media (max-width: $phone){
+            padding: 73px 16px 0px 16px;
+            grid-template-columns: 1fr;
+            gap: 48px;
+            margin: 0 0 64px 0;
+        }
+    }
+
+    &__title{
+        margin: 0 0 40px 0;
+    }
+
+    &__big-text{
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 38px;
+        letter-spacing: 0.1em;
+        font-family: $main-font;
+        color: $color-text;
+        margin: 0 0 20px 0;
+    }
+
+    &__img{
+        max-width: 225px;
+    }
+
+    &__text{
+        margin: 0 0 40px 0;
+
+        &:last-child{
+            margin: 0 0 64px 0;
+        }
+    }
+
+    &__resume-btn{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        max-width: 160px;
+        padding: 8px 34px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.1em;
+        background: $color-text;
+        font-family: $main-font;
+        color: white;      
+    }
+}

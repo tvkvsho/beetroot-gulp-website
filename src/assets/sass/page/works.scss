@@ -1,0 +1,100 @@
+.works{
+
+    &__head{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 128px 0;
+
+        @media (max-width: $phone){
+            grid-template-columns: 1fr;
+            padding: 73px 0px 48px 0px;
+        }
+    }
+
+    &__item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 0 48px 0;
+
+        &:last-child{
+            margin: 0 0 128px 0;
+        }
+
+        @media (max-width: $phone){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__col{
+
+        @media (max-width: $phone){
+
+            &:nth-child(2){
+                order: -1;
+                margin: 0 0 24px 0;
+            }
+        }
+    }
+
+    &__title{
+
+        @media (max-width: $phone){
+            margin: 0 0 48px 0;
+        }
+    }
+
+    &__head-text{
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        font-family: $main-font;
+        color: $color-black;
+    }
+
+    &__sub-title{
+        margin: 0 0 16px 0;
+    }
+
+    &__line{
+        display: block;
+        background: #CCCCCC;
+        width: 85px;
+        height: 1px;
+        margin: 0 0 24px 0;
+    }
+
+    &__tag{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.1em;
+        font-family: $main-font;
+        color: $color-black;
+        margin: 0 0 16px 0;
+    }
+
+    &__date{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.1em;
+        font-family: $main-font;
+        color: $color-black;
+        margin: 0 0 40px 0;
+    }
+
+    &__view-more{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: $color-text;
+        max-width: 192px;
+        color: white;
+        padding: 8px 34px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.1em;
+    }
+}

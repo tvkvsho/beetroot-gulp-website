@@ -1,0 +1,122 @@
+.contacts{
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__box{
+        display: flex;
+        justify-content: space-between;
+
+        &:first-child{
+            margin: 0 0 128px 0;
+
+            @media (max-width: $phone){
+                margin: 0 0 64px 0;
+            }
+        }
+
+        &:last-child{
+            margin: 0 0 128px 0;
+
+            @media (max-width: $phone){
+                margin: 0 0 64px 0;
+            }
+        }
+    }
+
+    &__info{
+
+        @media (max-width: $phone){
+            flex-direction: column;
+        }
+    }
+
+    &__head{
+        padding: 128px 0 0 0;
+
+        @media (max-width: $phone){
+            padding: 73px 0 0 0;
+            flex-direction: column;
+        }
+    }
+
+    &__title{
+
+        @media (max-width: $phone){
+            margin: 0 0 42px 0;
+        }
+    }
+
+    &__sub-title{
+        margin: 0 0 24px 0;
+    }
+
+    &__con {
+        display: flex;
+        gap: 9px;
+        margin: 0 0 21px 0;
+
+        font-family: $main-font;
+        color: $color-text;
+
+        &:last-child{
+            margin: 0 0 69px 0;
+        }
+    }
+
+    &__text{
+        max-width: 543px;
+    }
+
+    &__icon{
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    &__address{
+        flex-direction: column;
+    }
+
+    &__social {
+        display: flex;
+        gap: 24px;
+
+        @media (max-width: $phone){
+            margin: 0 0 64px 0;
+        }
+    }
+
+    .facebook{
+        max-width: 11px;
+    }
+
+    &__follow{
+        margin: 0 0 24px 0;
+    }
+
+    &__form{
+        display: flex;
+    }
+
+    &__select{
+        display: flex;
+    }
+
+    &__input{
+        width: 543px;
+        margin: 0 0 48px 0;
+
+        @media (max-width: $phone){
+            width: 90vw;
+        }
+    }
+
+    &__send{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+}
